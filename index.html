@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Gun permit background checks</title>
+    </head>
+    <link rel="stylesheet" type="text/css" href="lib/css/style.css" />
+    <body>
+        <div class="dfm-container">
+            <form id="dfm-form">
+                <!--    if user changes the option, change the index variable to that option's index
+                        and then call draw_chart
+                -->
+                Show <select id="dfm-select" onchange="index=this.selectedIndex, draw_chart()">
+                </select> background checks
+            </form>
+            <div id="dfm-graph-container">
+                <div id="dfm-graph"></div>
+                <img id="dfm-axis" src="lib/img/foroldpeople.gif" />
+            </div>
+
+        </div>
+            <div id="sourceCreds">
+                Source: <a href="http://www.fbi.gov/about-us/cjis/nics/reports/nics" target="_blank">National Instant Criminal Background Check System.</a> 
+                Despite some potentially unusual patterns, such as spikes or dips, data for the District of Columbia, Georgia, Kentucky, Maryland, Ohio, 
+                Utah and Wisconsin reflect what is in federal records. Attempts to verify that data with local agencies were unsuccessful.<br />
+                Credits: Sarah Glen, Vaughn Hagerty, Nelson Hsu / DFM
+            </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript" src="lib/js/dates-places.js"></script>
+        <script type="text/javascript" src="lib/js/data.js"></script>
+        <script type="text/javascript" src="lib/js/annotations.js"></script>
+        <script type="text/javascript" src="lib/js/gun-bg-checks-no-annot.js"></script>
+        <!--analytics-->
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-37303540-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+
+    </body>
+</html>

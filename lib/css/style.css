@@ -1,0 +1,15 @@
+.dfm-container { width:640px; margin:0;padding:0; font: bold 10pt Arial; position: relative;}
+#dfm-form { display: block; }
+#dfm-select { font-weight: bold; }
+#dfm-tooltip { padding: 3px; margin: 0; z-index: 1000 !important; background-color: #fff}
+#dfm-graph { width: 640px; height: 400px; margin:0;padding:0 }
+#dfm-axis { margin: 0 0 0 70px;padding:0; border: none; position: absolute; left: 0; top: 427; _top: 431}
+#sourceCreds {
+    width: 520px;
+    font: italic 11px Arial; 
+    color: #999; 
+    margin: 70px 0 10px 65px; 
+    border-top: 1px solid #e2e2e2; 
+    padding: 0 0 0 0;
+}
+a {color: #52A9DC;}
